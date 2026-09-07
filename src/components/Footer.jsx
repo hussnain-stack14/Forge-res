@@ -1,10 +1,12 @@
 import Link from "next/link";
 
 export default function Footer() {
+  const coordinates = '31°26\'22.5"N 74°16\'55.7"E';
+
   return (
-    <footer id="contact" className="bg-[#090909] border-t border-[#292522] py-14 relative">
+    <footer id="contact" className="bg-[#090909] border-t border-[#292522] py-12 sm:py-16 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center text-center md:text-left">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-12 items-center text-center md:text-left">
           {/* LEFT: LOGO & SLOGAN */}
           <div className="space-y-2">
             <Link
@@ -24,19 +26,22 @@ export default function Footer() {
           </div>
 
           {/* CENTER: MOTTO / BRAND STATEMENT */}
-          <div className="text-center">
+          <div className="text-center space-y-1.5">
             <p className="font-condensed text-xs sm:text-sm tracking-[0.2em] font-bold text-[#F5EFE5] uppercase">
               GOOD FOOD <span className="text-[#E33B20]">/</span> GREAT VIBES{" "}
               <span className="text-[#E33B20]">/</span> FORGE
             </p>
-            <p className="text-xs text-[#9B958B] mt-2 font-sans">
+            <p className="text-xs text-[#9B958B] font-sans">
               Umer Cash and Carry, Main Road, Nowgam
             </p>
-            <p className="text-xs text-[#9B958B] font-sans">
+
+            <p className="text-xs text-[#9B958B] font-sans pt-0.5">
               Call & WhatsApp:{" "}
               <a
                 href="https://wa.me/923063250741"
-                className="text-[#F5EFE5] hover:text-[#E33B20] font-medium transition-colors"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#F5EFE5] hover:text-[#E33B20] font-semibold transition-colors"
               >
                 0306 3250741
               </a>
@@ -45,7 +50,7 @@ export default function Footer() {
 
           {/* RIGHT: SOCIAL LINKS & QUICK ACTION */}
           <div className="flex flex-col md:items-end items-center space-y-3">
-            <div className="flex items-center gap-4">
+            <div className="flex items-center gap-3.5">
               {/* Instagram */}
               <a
                 href="https://instagram.com"

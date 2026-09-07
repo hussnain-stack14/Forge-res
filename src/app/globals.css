@@ -26,6 +26,23 @@
   --color-forge-text: #F5EFE5;
   --color-forge-muted: #9B958B;
   --color-forge-border: #292522;
+
+  --breakpoint-xs: 480px;
+}
+
+/* Base Body Styles */
+html {
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+body {
+  background-color: #090909;
+  color: #F5EFE5;
+  overflow-x: hidden;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 /* Custom scrollbar */
@@ -72,11 +89,11 @@
 @keyframes subtle-pulse {
   0%, 100% {
     transform: scale(1);
-    box-shadow: 0 0 20px rgba(227, 59, 32, 0.5);
+    box-shadow: 0 0 18px rgba(227, 59, 32, 0.45);
   }
   50% {
     transform: scale(1.03);
-    box-shadow: 0 0 30px rgba(227, 59, 32, 0.75);
+    box-shadow: 0 0 28px rgba(227, 59, 32, 0.75);
   }
 }
 
@@ -91,8 +108,4 @@
 
 .font-condensed {
   font-family: var(--font-oswald), sans-serif;
-}
-
-html {
-  scroll-behavior: smooth;
 }

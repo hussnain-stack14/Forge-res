@@ -5,13 +5,12 @@ export default function Features() {
       description: "Fresh, high-quality ingredients in every bite.",
       icon: (
         <svg
-          className="w-7 h-7 text-[#E33B20]"
+          className="w-6 sm:w-7 h-6 sm:h-7 text-[#E33B20]"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
           strokeWidth={1.75}
         >
-          {/* Burger / Ingredients Icon */}
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -30,13 +29,12 @@ export default function Features() {
       description: "Crafted with passion, served with attitude.",
       icon: (
         <svg
-          className="w-7 h-7 text-[#E33B20]"
+          className="w-6 sm:w-7 h-6 sm:h-7 text-[#E33B20]"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
           strokeWidth={1.75}
         >
-          {/* Flame / Bold flavor Icon */}
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -55,13 +53,12 @@ export default function Features() {
       description: "Hot, fresh and right to your door.",
       icon: (
         <svg
-          className="w-7 h-7 text-[#E33B20]"
+          className="w-6 sm:w-7 h-6 sm:h-7 text-[#E33B20]"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
           strokeWidth={1.75}
         >
-          {/* Speed / Rocket / Scooter delivery Icon */}
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -75,13 +72,12 @@ export default function Features() {
       description: "Clean kitchen. Safe food. Always.",
       icon: (
         <svg
-          className="w-7 h-7 text-[#E33B20]"
+          className="w-6 sm:w-7 h-6 sm:h-7 text-[#E33B20]"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
           strokeWidth={1.75}
         >
-          {/* Shield / Safety check Icon */}
           <path
             strokeLinecap="round"
             strokeLinejoin="round"
@@ -93,23 +89,19 @@ export default function Features() {
   ];
 
   return (
-    <section className="bg-[#11100F] border-y border-[#292522] py-8 sm:py-10 relative z-20">
+    <section className="bg-[#11100F] border-y border-[#292522] py-6 sm:py-8 lg:py-10 relative z-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 divide-y sm:divide-y-0 sm:divide-x divide-[#292522]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 divide-y sm:divide-y-0 divide-[#292522]">
           {features.map((item, index) => (
             <div
               key={item.title}
-              className={`flex items-start gap-4 py-5 sm:py-2 ${
-                index === 0 ? "sm:pl-0" : "sm:pl-6 lg:pl-8"
-              } ${
-                index === features.length - 1 ? "sm:pr-0" : "sm:pr-6 lg:pr-8"
-              } transition-all duration-300 hover:bg-[#151311]/50 group rounded-lg p-3`}
+              className={`flex items-start gap-3.5 sm:gap-4 pt-4 first:pt-0 sm:pt-2 transition-all duration-300 hover:bg-[#151311]/50 group rounded-lg p-2.5 sm:p-3`}
             >
-              <div className="p-2.5 rounded-lg bg-[#090909] border border-[#292522] group-hover:border-[#E33B20]/40 group-hover:shadow-[0_0_15px_rgba(227,59,32,0.25)] transition-all shrink-0">
+              <div className="p-2 sm:p-2.5 rounded-lg bg-[#090909] border border-[#292522] group-hover:border-[#E33B20]/40 group-hover:shadow-[0_0_15px_rgba(227,59,32,0.25)] transition-all shrink-0">
                 {item.icon}
               </div>
-              <div className="space-y-1">
-                <h3 className="font-condensed font-bold text-sm lg:text-base tracking-wider text-[#F5EFE5] uppercase group-hover:text-[#E33B20] transition-colors">
+              <div className="space-y-0.5 sm:space-y-1">
+                <h3 className="font-condensed font-bold text-xs sm:text-sm lg:text-base tracking-wider text-[#F5EFE5] uppercase group-hover:text-[#E33B20] transition-colors">
                   {item.title}
                 </h3>
                 <p className="text-xs sm:text-sm text-[#9B958B] leading-relaxed">
